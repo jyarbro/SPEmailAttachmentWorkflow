@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="83ee1153-6848-4795-9bd1-3c2ba5bcf731" solutionId="83ee1153-6848-4795-9bd1-3c2ba5bcf731" resetWebServer="false" sharePointProductVersion="16.0" name="EmailAttachmentWorkflow" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Autofac.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\SharedReferences\Autofac.dll" />
+    <customAssembly location="Newtonsoft.Json.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\SharedReferences\Newtonsoft.Json.dll" />
+    <projectOutputAssembly location="OKM.EmailAttachmentWorkflow.Code.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Code\Code.csproj" />
+    <projectOutputAssembly location="OKM.EmailAttachmentWorkflow.WorkflowActivity.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\WorkflowActivity\WorkflowActivity.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="3bad96e5-ab81-40ea-a7a7-f193c412e456" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="496a5968-e696-4b57-88a8-b0321f2d27a3" />
+  </projectItems>
+</package>

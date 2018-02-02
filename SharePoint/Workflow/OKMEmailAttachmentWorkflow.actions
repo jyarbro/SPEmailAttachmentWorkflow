@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+	<Actions>
+		<Action Name="Email a file"
+		 ClassName="OKM.EmailAttachmentWorkflow.WorkflowActivity.WorkflowActivity"
+		 Assembly="OKM.EmailAttachmentWorkflow.WorkflowActivity, Version=1.0.0.0, Culture=neutral,PublicKeyToken=9ecb243aa81c96e8"
+		 AppliesTo="all" Category="Office of Knowledge Management">
+
+			<RuleDesigner Sentence="Send files from workflow context item in %1. Save workflow results to %2.">
+				<FieldBind Field="EmailTo,EmailCC,EmailSubject,EmailBody" Text="an email" DesignerType="Email" Id="1" />
+				<FieldBind Field="Result" DesignerType="ParameterNames" Text="WorkflowResult" Id="2" />
+			</RuleDesigner>
+
+			<Parameters>
+				<Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext" Direction="In" />
+				<Parameter Name="__ActivationProperties" Type="Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties, Microsoft.SharePoint" Direction="Out" />
+				<Parameter Name="EmailTo" Type="System.Collections.ArrayList, mscorlib" Direction="In" />
+				<Parameter Name="EmailCC" Type="System.Collections.ArrayList, mscorlib" Direction="Optional" />
+				<Parameter Name="EmailSubject" Type="System.String, mscorlib" Direction="In" />
+				<Parameter Name="EmailBody" Type="System.String, mscorlib" Direction="In" />
+				<Parameter Name="Result" Type="System.String, mscorlib" Direction="Out" />
+			</Parameters>
+		</Action>
+	</Actions>
+</WorkflowInfo>
