@@ -9,6 +9,8 @@ The three assemblies you will need to sign are from these projects:
 - SharePoint
 - WorkflowActivity
 
+After you sign your assemblies, open [OKMEmailAttachmentWorkflow.actions](https://github.com/jyarbro/SPEmailAttachmentWorkflow/blob/master/SharePoint/Workflow/OKMEmailAttachmentWorkflow.actions) and update the public key token. You'll need to follow [this guide](https://blogs.msdn.microsoft.com/miah/2008/02/19/visual-studio-tip-get-public-key-token-for-a-strong-named-assembly/) if you aren't sure how to get the public key token. You'll need to find the public key token for the WorkflowActivity key.snk specifically, so make sure you highlight the right file before you run that `sn -T` tool.
+
 Make sure you're targetting the correct assemblies for your version of SharePoint. I believe this code should work for SP2010 through 2016, as long as you update the `Microsoft.SharePoint` references.
 
 It's a farm solution, so you'll need Central Administration to install it.
