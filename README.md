@@ -3,6 +3,12 @@ Allows you to email list item attachments and documents to an email recipient.
 
 You will need to [sign the assemblies](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) yourself, and build the `.wsp` package in Visual Studio on a machine that has SharePoint installed.
 
+The three assemblies you will need to sign are from these projects:
+
+- Code
+- SharePoint
+- WorkflowActivity
+
 Make sure you're targetting the correct assemblies for your version of SharePoint. I believe this code should work for SP2010 through 2016, as long as you update the `Microsoft.SharePoint` references.
 
 It's a farm solution, so you'll need Central Administration to install it.
