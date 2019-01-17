@@ -3,7 +3,7 @@ Allows you to email list item attachments and documents to an email recipient.
 
 It's a farm solution, so you'll need Central Administration to install it.
 
-Essentially you just need to install the package on your farm, and create a workflow on any list or doc library.
+Essentially you just need to install the package on your farm, activate the feature at the WEB APP level, and create a workflow on any list or doc library.
 
 Select the `Email a file` workflow activity provided under the `Office of Knowledge Management` category. Configure the email to pull the recipient address from a metadata field or other workflow variable. Optionally, do something with the workflow result such as logging it to a workflow history list.
 
