@@ -3,7 +3,7 @@
 	<Actions>
 		<Action Name="Email a file"
 		 ClassName="OKM.EmailAttachmentWorkflow.WorkflowActivity.WorkflowActivity"
-		 Assembly="OKM.EmailAttachmentWorkflow.WorkflowActivity, Version=1.0.0.0, Culture=neutral,PublicKeyToken=9ecb243aa81c96e8"
+		 Assembly="OKM.EmailAttachmentWorkflow.WorkflowActivity, Version=1.0.0.0, Culture=neutral,PublicKeyToken=b1d27f91897a76b0"
 		 AppliesTo="all" Category="Office of Knowledge Management">
 
 			<RuleDesigner Sentence="Send files from workflow context item in %1. Save workflow results to %2.">
